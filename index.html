@@ -1,130 +1,155 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7Essências - Perfumes Femininos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7essencias</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff8f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
     }
-    .section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 20px;
-    }
-    .section:nth-child(even) {
-      flex-direction: row-reverse;
-      background: linear-gradient(to right, #fff8f9, #ffe0ec);
-    }
-    .section:nth-child(odd) {
-      background: linear-gradient(to left, #fff8f9, #ffe0ec);
-    }
-    .image {
-      flex: 1;
+
+    header {
+      padding: 2rem;
       text-align: center;
+      background: linear-gradient(to right, #f9e8f0, #fdf6f9);
     }
-    .image img {
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .product:nth-child(even) {
+      flex-direction: row-reverse;
+      background: linear-gradient(to left, #fff0f5, #ffffff);
+    }
+
+    .product:nth-child(odd) {
+      background: linear-gradient(to right, #fff0f5, #ffffff);
+    }
+
+    .product img {
       width: 300px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 90%;
+      border-radius: 10px;
     }
-    .content {
+
+    .product-content {
       flex: 1;
-      max-width: 400px;
-      padding: 20px;
+      padding: 1.5rem;
     }
-    .content h2 {
+
+    .product-content h2 {
       font-size: 1.5rem;
-      color: #b30059;
+      color: #d63384;
     }
-    .content p {
-      font-size: 1rem;
-      color: #444;
-      margin: 10px 0;
+
+    .product-content p {
+      margin: 1rem 0;
     }
-    .content a {
+
+    .btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #b30059;
-      color: #fff;
+      background: linear-gradient(90deg, #f783ac, #f8a1d1);
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 8px;
       font-weight: bold;
+    }
+
+    footer {
+      height: 2rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>7essencias</h1>
+    <p>Os 7 perfumes femininos mais desejados do momento</p>
+  </header>
 
-<!-- Perfume blocks -->
-<div class="section">
-  <div class="image"><img src="images/1.png" alt="Perfume 1" /></div>
-  <div class="content">
-    <h2>Cacharel Amor Amor EDT 30ml</h2>
-    <p>Uma explosão de paixão e energia em cada gota, ideal para encontros e noites marcantes.</p>
-    <a href="https://mercadolivre.com/sec/1ozdiMT" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="luna.jpg" alt="Luna Radiante">
+    <div class="product-content">
+      <h2>Luna Radiante – Natura</h2>
+      <p>Uma fragrância floral frutada que exala alegria, feminilidade e leveza. Perfeita para mulheres otimistas que iluminam tudo ao redor.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/1Cm6pNn" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/2.png" alt="Perfume 2" /></div>
-  <div class="content">
-    <h2>Floratta Red - O Boticário</h2>
-    <p>Inspirado na flor da maçã de Vermont, combina doçura e sensualidade com elegância única.</p>
-    <a href="https://mercadolivre.com/sec/2cx7Zko" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="la-petite.jpg" alt="La Petite Fleur Secrète">
+    <div class="product-content">
+      <h2>La Petite Fleur Secrète – Paris Elysees</h2>
+      <p>Combina notas orientais com um toque floral sofisticado. Um perfume intenso para mulheres que gostam de deixar sua marca.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/18dhXo6" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/3.png" alt="Perfume 3" /></div>
-  <div class="content">
-    <h2>Sabah Al Ward - Al Wataniah</h2>
-    <p>Perfume árabe intenso com notas florais orientais, ideal para ocasiões especiais e elegância duradoura.</p>
-    <a href="https://mercadolivre.com/sec/2KjVpqY" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="sabah.jpg" alt="Sabah Al Ward">
+    <div class="product-content">
+      <h2>Sabah Al Ward – Al Wataniah</h2>
+      <p>Floral-oriental envolvente com toques de âmbar e almíscar. Ideal para quem busca um perfume leve, delicado e sofisticado ao mesmo tempo.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/2KjVpqY" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/4.png" alt="Perfume 4" /></div>
-  <div class="content">
-    <h2>La Petite Fleur Secrete - Paris Elysees</h2>
-    <p>Delicado, feminino e jovem, uma fragrância floral leve para o dia a dia com toque francês.</p>
-    <a href="https://mercadolivre.com/sec/18dhXo6" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="floratta.jpg" alt="Floratta Red">
+    <div class="product-content">
+      <h2>Floratta Red – O Boticário</h2>
+      <p>Doce, floral e envolvente. Um perfume romântico, jovem e marcante — ideal para quem quer expressar sua personalidade com suavidade.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/2cx7Zko" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/5.png" alt="Perfume 5" /></div>
-  <div class="content">
-    <h2>Una Blush - Natura</h2>
-    <p>Floral sofisticado com leve toque frutado, ideal para mulheres confiantes e modernas.</p>
-    <a href="https://mercadolivre.com/sec/1cj6i4g" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="amor-amor.jpg" alt="Amor Amor">
+    <div class="product-content">
+      <h2>Amor Amor – Cacharel</h2>
+      <p>Ícone do romantismo moderno, combina cereja preta, jasmim e almíscar branco. Feito para encontros apaixonantes e noites inesquecíveis.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/1ozdiMT" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/6.png" alt="Perfume 6" /></div>
-  <div class="content">
-    <h2>Hello Hello - Ciclo</h2>
-    <p>Juventude e liberdade em uma fragrância divertida e alegre, perfeita para o dia a dia.</p>
-    <a href="https://mercadolivre.com/sec/2ZaBshb" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="hello.jpg" alt="Hello Hello!">
+    <div class="product-content">
+      <h2>Hello Hello! – Nah Cardoso</h2>
+      <p>Notas doces de baunilha, avelã e chocolate suíço. Feminino, jovem e carismático. O toque final perfeito para seu look.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/2ZaBshb" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="image"><img src="images/7.png" alt="Perfume 7" /></div>
-  <div class="content">
-    <h2>Luna Radiante - Natura</h2>
-    <p>Feminilidade luminosa com notas florais e frescas, que combinam com dias ensolarados.</p>
-    <a href="https://mercadolivre.com/sec/1Cm6pNn" target="_blank">Ver no Mercado Livre</a>
+  <div class="product">
+    <img src="una.jpg" alt="Una Blush">
+    <div class="product-content">
+      <h2>Una Blush – Natura</h2>
+      <p>Com flor de laranjeira, baunilha e âmbar, é ideal para ocasiões especiais. Um perfume intenso e elegante, com toque artístico e moderno.</p>
+      <a class="btn" href="https://mercadolivre.com/sec/1cj6i4g" target="_blank">Ver no Mercado Livre</a>
+    </div>
   </div>
-</div>
 
+  <footer></footer>
 </body>
 </html>
