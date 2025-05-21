@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7Essências</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffafc;
+      color: #333;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #fde8f0, #fff0f5);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-family: 'Playfair Display', serif;
+      color: #b30059;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #714b64;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+      transition: background 0.5s ease;
+    }
+
+    .product:nth-child(even) {
+      flex-direction: row-reverse;
+      background: linear-gradient(to left, #fff5f8, #fefefe);
+    }
+
+    .product:nth-child(odd) {
+      background: linear-gradient(to right, #fff5f8, #fefefe);
+    }
+
+    .product img {
+      width: 320px;
+      max-width: 90%;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-content {
+      flex: 1;
+      padding: 1.5rem;
+    }
+
+    .product-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      color: #aa1e56;
+    }
+
+    .product-content p {
+      font-size: 1rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #d63384, #f783ac);
+      color: white;
+      padding: 0.8rem 1.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #c02468, #e96a95);
+    }
+
+    footer {
+      height: 3rem;
+      background: #fdf0f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>7Essências</h1>
+    <p>Descubra os perfumes femininos mais desejados do momento</p>
+  </header>
+</body>
+</html>
