@@ -5,33 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>7Essências</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1607083207283-89e7baf71ba2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
-      background-size: cover;
-      background-attachment: fixed;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff9fb;
       color: #333;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 245, 250, 0.92);
-      z-index: -1;
     }
 
     header {
       padding: 2rem;
       text-align: center;
-      background: linear-gradient(to right, #fde8f0, #fff0f5);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(to right, #fde0ec, #f9f0ff);
     }
 
     header h1 {
@@ -46,42 +32,47 @@
       color: #714b64;
     }
 
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 2rem auto;
+      max-width: 700px;
+      color: #5a3e4c;
+      font-style: italic;
+    }
+
+    .divider-text {
+      text-align: center;
+      font-size: 1rem;
+      padding: 1.5rem 1rem 0.5rem;
+      color: #ad4c7d;
+    }
+
     .product {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 3rem 2rem;
-      flex-wrap: wrap;
-      background: rgba(255, 255, 255, 0.92);
-      margin: 1rem 2rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .product:hover {
-      transform: scale(1.01);
-    }
-
-    .product:nth-child(even) {
-      flex-direction: row-reverse;
+      padding: 2rem 1rem;
+      background: linear-gradient(to bottom, #ffffff, #fff2f8);
+      border-top: 1px solid #f3dbe4;
     }
 
     .product img {
       width: 320px;
-      max-width: 90%;
+      max-width: 95%;
       border-radius: 16px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
     }
 
     .product-content {
-      flex: 1;
-      padding: 1.5rem;
+      max-width: 600px;
+      text-align: center;
+      padding: 1.5rem 0;
     }
 
     .product-content h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       color: #aa1e56;
     }
 
@@ -95,21 +86,21 @@
       display: inline-block;
       background: linear-gradient(90deg, #d63384, #f783ac);
       color: white;
-      padding: 0.8rem 1.4rem;
+      padding: 0.9rem 1.6rem;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
-      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 6px 12px rgba(214, 51, 132, 0.25);
+      transition: background 0.3s ease;
+      margin-bottom: 1rem;
     }
 
     .btn:hover {
       background: linear-gradient(90deg, #c02468, #e96a95);
-      transform: scale(1.05);
     }
 
     footer {
-      height: 3rem;
+      height: 4rem;
       background: #fdf0f5;
     }
   </style>
@@ -120,66 +111,82 @@
     <p>Os 7 perfumes femininos mais desejados do momento</p>
   </header>
 
+  <div class="intro">
+    Perfumes que despertam memórias, paixões e presença. Escolha sua próxima assinatura olfativa.
+  </div>
+
   <div class="product">
     <img src="luna.jpg.png" alt="Luna Radiante">
     <div class="product-content">
       <h2>Luna Radiante – Natura</h2>
       <p>Uma fragrância floral frutada que exala alegria, feminilidade e leveza. Perfeita para mulheres otimistas que iluminam tudo ao redor.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/1Cm6pNn" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/1Cm6pNn" target="_blank">Quero sentir essa essência</a>
     </div>
   </div>
+
+  <div class="divider-text">Descubra o poder de uma fragrância inesquecível</div>
 
   <div class="product">
     <img src="la-petite.jpg.png" alt="La Petite Fleur Secrète">
     <div class="product-content">
       <h2>La Petite Fleur Secrète – Paris Elysees</h2>
       <p>Combina notas orientais com um toque floral sofisticado. Um perfume intenso para mulheres que gostam de deixar sua marca.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/18dhXo6" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/18dhXo6" target="_blank">Ver detalhes</a>
     </div>
   </div>
+
+  <div class="divider-text">Sua presença começa antes das palavras</div>
 
   <div class="product">
     <img src="sabah.jpg.png" alt="Sabah Al Ward">
     <div class="product-content">
       <h2>Sabah Al Ward – Al Wataniah</h2>
       <p>Floral-oriental envolvente com toques de âmbar e almíscar. Ideal para quem busca um perfume leve, delicado e sofisticado ao mesmo tempo.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/2KjVpqY" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/2KjVpqY" target="_blank">Conhecer agora</a>
     </div>
   </div>
+
+  <div class="divider-text">O detalhe que transforma sua rotina</div>
 
   <div class="product">
     <img src="floratta.jpg.png" alt="Floratta Red">
     <div class="product-content">
       <h2>Floratta Red – O Boticário</h2>
       <p>Doce, floral e envolvente. Um perfume romântico, jovem e marcante — ideal para quem quer expressar sua personalidade com suavidade.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/2cx7Zko" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/2cx7Zko" target="_blank">Explorar fragrância</a>
     </div>
   </div>
+
+  <div class="divider-text">Perfume também é atitude</div>
 
   <div class="product">
     <img src="amor-amor.jpg.png" alt="Amor Amor">
     <div class="product-content">
       <h2>Amor Amor – Cacharel</h2>
       <p>Ícone do romantismo moderno, combina cereja preta, jasmim e almíscar branco. Feito para encontros apaixonantes e noites inesquecíveis.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/1ozdiMT" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/1ozdiMT" target="_blank">Quero esse agora</a>
     </div>
   </div>
+
+  <div class="divider-text">Sua fragrância, sua marca no mundo</div>
 
   <div class="product">
     <img src="hello.jpg.png" alt="Hello Hello!">
     <div class="product-content">
       <h2>Hello Hello! – Nah Cardoso</h2>
       <p>Notas doces de baunilha, avelã e chocolate suíço. Feminino, jovem e carismático. O toque final perfeito para seu look.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/2ZaBshb" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/2ZaBshb" target="_blank">Ver agora</a>
     </div>
   </div>
+
+  <div class="divider-text">Para dias doces e momentos marcantes</div>
 
   <div class="product">
     <img src="una.jpg.png" alt="Una Blush">
     <div class="product-content">
       <h2>Una Blush – Natura</h2>
       <p>Com flor de laranjeira, baunilha e âmbar, é ideal para ocasiões especiais. Um perfume intenso e elegante, com toque artístico e moderno.</p>
-      <a class="btn" href="https://mercadolivre.com/sec/1cj6i4g" target="_blank">Ver no Mercado Livre</a>
+      <a class="btn" href="https://mercadolivre.com/sec/1cj6i4g" target="_blank">Me apaixonei por esse</a>
     </div>
   </div>
 
